@@ -84,6 +84,7 @@ export default class App extends Component {
           const opacity = this.animatedValue[index];
           return (
             <Animated.View
+              key={'animated-colors-' + index}
               style={[
                 StyleSheet.absoluteFill,
                 {backgroundColor: item, opacity},
